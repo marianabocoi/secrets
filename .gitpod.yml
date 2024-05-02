@@ -1,0 +1,7 @@
+tasks:
+  - name: Setup alias and open README
+    init: |
+      alias dfimage="docker run -v /var/run/docker.sock:/var/run/docker.sock --rm ghcr.io/laniksj/dfimage"; \
+      alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive"; \
+      code README.md ; \
+      clear
